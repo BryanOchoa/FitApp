@@ -9,11 +9,20 @@ import SwiftUI
 
 struct HomeView: View {
     @State var calories : Int = 123
-    @State var active : Int = 12
+    @State var active : Int = 52
     @State var stand : Int = 8
+    
+    var mockActivities = [
+        Activity(id: 0, title: "Todays Steps", subtitle: "Goal 12,000", image: "figure.walk", tintColor: .green, amount: "9,234"),
+        Activity(id: 1, title: "Todays", subtitle: "Goal 1,000", image: "figure.walk", tintColor: .red, amount: "812"),
+        Activity(id: 2, title: "Todays Steps", subtitle: "Goal 12,000", image: "figure.walk", tintColor: .blue, amount: "9,234"),
+        Activity(id: 3, title: "Todays Steps", subtitle: "Goal 50,000", image: "figure.run", tintColor: .purple, amount: "59,234"),
+    ]
+    
+    
     var body: some View {
         ScrollView(showsIndicators: false) {
-            VStack{
+            VStack(alignment: .leading){
                 Text("Welcome")
                     .font(.largeTitle)
                     .padding()
@@ -66,6 +75,28 @@ struct HomeView: View {
                     Spacer()
                 }
                 .padding()
+                
+                HStack{
+                    Text("Fitness Activity")
+                        .font(.title2)
+                    
+                    Spacer()
+                    
+                    Button{
+                        print("show more")
+                    } label: {
+                        Text("Show More")
+                            .padding(.all, 10)
+                            .foregroundColor(.white)
+                            .background(.blue)
+                            .cornerRadius(20)
+                    }
+                }.padding(.horizontal)
+                
+                LazyVGrid(columns: Array(repeating: GridItem(spacing: 2), count: 2)) {
+                    ForEach(mockActivities, id: \.id){activity in
+                    ActivityCard(activity: activity)}
+                }.padding(.horizontal)
             }
         }
     }
@@ -74,3 +105,4 @@ struct HomeView: View {
 #Preview {
     HomeView()
 }
+

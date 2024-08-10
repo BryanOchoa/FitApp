@@ -12,9 +12,10 @@
 		9389235F2C66DFF0002D1CCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9389235E2C66DFF0002D1CCF /* Assets.xcassets */; };
 		938923622C66DFF0002D1CCF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 938923612C66DFF0002D1CCF /* Preview Assets.xcassets */; };
 		938923692C66EA65002D1CCF /* FitnessTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938923682C66EA65002D1CCF /* FitnessTabView.swift */; };
-		9389236B2C66EBB9002D1CCF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9389236A2C66EBB9002D1CCF /* HomeView.swift */; };
 		9389236D2C66EC29002D1CCF /* HistoricDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9389236C2C66EC29002D1CCF /* HistoricDataView.swift */; };
 		9389236F2C670166002D1CCF /* ProgressCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9389236E2C670166002D1CCF /* ProgressCircleView.swift */; };
+		938923722C670A64002D1CCF /* ActivityCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938923712C670A64002D1CCF /* ActivityCard.swift */; };
+		938923762C671584002D1CCF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938923752C671584002D1CCF /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,9 +25,10 @@
 		9389235E2C66DFF0002D1CCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		938923612C66DFF0002D1CCF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		938923682C66EA65002D1CCF /* FitnessTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessTabView.swift; sourceTree = "<group>"; };
-		9389236A2C66EBB9002D1CCF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		9389236C2C66EC29002D1CCF /* HistoricDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricDataView.swift; sourceTree = "<group>"; };
 		9389236E2C670166002D1CCF /* ProgressCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCircleView.swift; sourceTree = "<group>"; };
+		938923712C670A64002D1CCF /* ActivityCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCard.swift; sourceTree = "<group>"; };
+		938923752C671584002D1CCF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,14 +61,13 @@
 		938923592C66DFEF002D1CCF /* Fitapp */ = {
 			isa = PBXGroup;
 			children = (
+				938923732C6714AD002D1CCF /* Home */,
 				9389235A2C66DFEF002D1CCF /* FitappApp.swift */,
 				9389235C2C66DFEF002D1CCF /* ContentView.swift */,
 				9389235E2C66DFF0002D1CCF /* Assets.xcassets */,
 				938923602C66DFF0002D1CCF /* Preview Content */,
 				938923682C66EA65002D1CCF /* FitnessTabView.swift */,
-				9389236A2C66EBB9002D1CCF /* HomeView.swift */,
 				9389236C2C66EC29002D1CCF /* HistoricDataView.swift */,
-				9389236E2C670166002D1CCF /* ProgressCircleView.swift */,
 			);
 			path = Fitapp;
 			sourceTree = "<group>";
@@ -77,6 +78,16 @@
 				938923612C66DFF0002D1CCF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		938923732C6714AD002D1CCF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9389236E2C670166002D1CCF /* ProgressCircleView.swift */,
+				938923712C670A64002D1CCF /* ActivityCard.swift */,
+				938923752C671584002D1CCF /* HomeView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,10 +161,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				938923692C66EA65002D1CCF /* FitnessTabView.swift in Sources */,
+				938923762C671584002D1CCF /* HomeView.swift in Sources */,
 				9389236F2C670166002D1CCF /* ProgressCircleView.swift in Sources */,
-				9389236B2C66EBB9002D1CCF /* HomeView.swift in Sources */,
 				9389236D2C66EC29002D1CCF /* HistoricDataView.swift in Sources */,
 				9389235D2C66DFEF002D1CCF /* ContentView.swift in Sources */,
+				938923722C670A64002D1CCF /* ActivityCard.swift in Sources */,
 				9389235B2C66DFEF002D1CCF /* FitappApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
